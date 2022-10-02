@@ -3,7 +3,7 @@ FROM nvcr.io/nvidia/pytorch:21.12-py3
 # apt & Timezone Settings & sudo
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Seoul
-RUN apt update && apt install -y tzdata && apt install -y sudo
+RUN apt update && apt install -y tzdata && apt install -y sudo net-tools iputils-ping
 
 # Install Nodejs for jupyterlab-manager
 # node lts
