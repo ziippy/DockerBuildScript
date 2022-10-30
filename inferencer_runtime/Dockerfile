@@ -17,7 +17,7 @@ RUN curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash - && \
  sudo rm -rf /var/lib/apt/lists/*
 
 # install latest JL, ipywidgets, ...
-RUN pip uninstall jupyterlab -y && pip install jupyterlab ipywidgets accelerate
+RUN pip uninstall jupyterlab -y && pip install jupyterlab ipywidgets accelerate sentencepiece
 
 # Add Tini
 ENV TINI_VERSION v0.19.0
