@@ -1,5 +1,6 @@
-# https://docs.nvidia.com/deeplearning/frameworks/pytorch-release-notes/rel_21-12.html#rel_21-12
-FROM nvcr.io/nvidia/pytorch:21.12-py3
+# https://docs.nvidia.com/deeplearning/triton-inference-server/release-notes/rel-22-10.html#rel-22-10
+# FROM nvcr.io/nvidia/tritonserver:21.12-py3
+FROM nvcr.io/nvidia/tritonserver:22.10-py3
 
 # apt & Timezone Settings & sudo
 ARG DEBIAN_FRONTEND=noninteractive
